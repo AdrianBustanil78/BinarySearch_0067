@@ -23,10 +23,10 @@ void input()
         }
     }
 }
-cout << "\n========================================\n";
-cout << "          Maukkan Elemen Array          \n";
-cout << "\n======================================\n";
-for (int i = 0; i < nPanjang; i++)
+ cout << "\n========================================\n";
+ cout << "          Maukkan Elemen Array          \n";
+ cout << "\n======================================\n";
+ for (int i = 0; i < nPanjang; i++)
 {
     cout << "Data ke-" << (i + 1) << " = ";
     cin >> element[i];
@@ -80,7 +80,7 @@ do
     
     int low = 0;
     int high = nPanjang - 1;
-    int main()
+    
     do
         {
             int mid = (low + high)/2;
@@ -106,5 +106,13 @@ do
         cout << "\nIngin mencari lagi? (y/n): ";
         cin >> ulang;
     } while (ulang == 'y' || ulang == 'Y');
+}
+
+int main()
+{
+input();
+bubbleSortArray();
+display();
+binarySearch();
 }
 
